@@ -18,3 +18,6 @@ position = Vector2(89, -103)
 [node name="Obstaculo" parent="." instance=ExtResource("3_dir33")]
 position = Vector2(416, -335)
 position_base = Vector2(0, 100)
+
+[node name="Plataforma3" parent="." instance=ExtResource("1_ghn6f")]
+position = Vector2(1082, -53)
