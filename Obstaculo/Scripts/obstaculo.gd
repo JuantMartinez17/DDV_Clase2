@@ -13,3 +13,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
+
+	
+
+
+func _on_rigid_body_2d_body_entered(body: Node) -> void:
+	if (body.has_method("_die")):
+		body._die()

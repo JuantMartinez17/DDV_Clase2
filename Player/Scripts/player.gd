@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 600.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -300.0
 
 
 func _physics_process(delta: float) -> void:
@@ -30,3 +30,7 @@ func _physics_process(delta: float) -> void:
 func _move_to_portal():
 	print("function move to portal executed")
 	position = get_parent().get_node("PortalB").position
+
+
+func _die():
+	position = Vector2(15, 15)

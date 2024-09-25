@@ -24,6 +24,8 @@ script = ExtResource("1_3n16r")
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 mass = 0.008
 can_sleep = false
+contact_monitor = true
+max_contacts_reported = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("RectangleShape2D_6tx7a")
@@ -47,4 +49,5 @@ position = Vector2(0, 27)
 position = Vector2(0, 67.1167)
 shape = SubResource("RectangleShape2D_nec4y")
 
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_body_entered"]
 [connection signal="body_entered" from="Trigger" to="StaticBody2D" method="_on_trigger_body_entered"]

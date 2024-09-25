@@ -22,10 +22,10 @@ position = Vector2(416, -335)
 position_base = Vector2(0, 100)
 
 [node name="Plataforma3" parent="." instance=ExtResource("1_ghn6f")]
-position = Vector2(1082, -53)
+position = Vector2(1082, -125)
 
 [node name="PortalA" parent="." instance=ExtResource("4_d5o13")]
 position = Vector2(-191, -136)
 
 [node name="PortalB" parent="." instance=ExtResource("5_8atys")]
-position = Vector2(953, -187)
+position = Vector2(953, -259)
